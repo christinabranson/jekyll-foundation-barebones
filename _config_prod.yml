@@ -17,14 +17,12 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: chrissybranso
 github_username:  christinabranson
 
-# URL Settings
+# 
 url: "" # the base hostname & protocol for your site
 permalink: /blog/:categories/:year/:month/:day/:title.html # permalink to put posts in "blog" subdirectory
 
 # Environment settings
-production: false
-port: 8080 # local setting for cloud9 dev
-host: 0.0.0.0 # local setting for cloud9 dev
+production: true
 timezone: "America/New_York"
 
 # Build settings
