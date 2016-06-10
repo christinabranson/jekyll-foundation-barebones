@@ -22,6 +22,7 @@
 
     <!-- "wider" top-bar menu for 'medium' and up -->
     <div id="widemenu" class="top-bar">
+        <div class="row">
       <div class="top-bar-left">
         <ul class="dropdown menu" data-dropdown-menu>
           <li class="menu-text"><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></li>
@@ -38,8 +39,13 @@
              <li><a class="page-link" href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a></li>
             {% endif %}
           {% endfor %}
-          <li><a href="">Lalala</a></li>
+
+          {% for col in site.samples %}
+                <li>{{ col.title }}</li>
+          {% endfor %}
+
         </ul>
+      </div>
       </div>
     </div>
     <!--- LEAVE THIS UNCLOSED; OFF-CANVA WRAPPER SHOULD GO AROUND ALL CONTENT -->
