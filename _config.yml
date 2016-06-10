@@ -29,3 +29,12 @@ timezone: "America/New_York"
 
 # Build settings
 markdown: kramdown
+
+# Collections
+collections:
+  documentation:
+    output: true
+    permalink: /documentation/:path/
+  samples:
+    output: true
+    permalink: /samples/:path/
