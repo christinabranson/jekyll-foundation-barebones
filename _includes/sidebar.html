@@ -1,0 +1,5 @@
+<h2>Sidebar</h2>
+<!-- Show all post categories with links -->
+        {% for category in site.categories %}
+        "{{ category | first }}"{% unless forloop.last %},{% endunless %}
+        {% endfor %}
