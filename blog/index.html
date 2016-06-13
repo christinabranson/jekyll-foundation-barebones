@@ -1,15 +1,11 @@
 ---
 layout: page
 title: Blog
-permalink: /blog/
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -19,6 +15,21 @@ permalink: /blog/
       </li>
     {% endfor %}
   </ul>
+  
+      <!-- Pagination links -->
+<ul class="pagination text-center" role="navigation" aria-label="Pagination">
+  {% if paginator.previous_page %}
+    <li class="pagination-previous"><a href="{{ paginator.previous_page_path }}" class="previous">Previous</a></li>
+  {% else %}
+     <li class="pagination-previous disabled">Previous <span class="show-for-sr">page</span></li>
+  {% endif %}
+   <li><span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span></li>
+  {% if paginator.next_page %}
+     <li class="pagination-next"><a href="{{ paginator.next_page_path }}" class="next">Next</a></li>
+  {% else %}
+    <li class="pagination-next disabled"><span class="next ">Next</span></li>
+  {% endif %}
+</ul>
 
   <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 

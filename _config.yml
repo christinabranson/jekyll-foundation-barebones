@@ -8,6 +8,7 @@
 # Site settings
 title: Foundation Barebones
 email: clbranson@gmail.com
+name: Christina Branson
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
   line in _config.yml. It will appear in your document head meta (for
@@ -19,7 +20,13 @@ github_username:  christinabranson
 
 # URL Settings
 url: "" # the base hostname & protocol for your site
-permalink: /blog/:categories/:year/:month/:day/:title.html # permalink to put posts in "blog" subdirectory
+permalink: /blog/:year/:month/:day/:title.html # permalink to put posts in "blog" subdirectory
+
+# Blog Settings
+category_dir: /blog/category/ # The subfolder to build category pages in (default is 'categories').
+category_title_prefix: 'Category: ' #The string used before the category name in the page title (default is 'Category: ').
+paginate: 1 # Number of posts per page
+paginate_path: "/blog/page:num/"
 
 # Environment settings
 production: false
@@ -38,3 +45,7 @@ collections:
   samples:
     output: true
     permalink: /samples/:path/
+    
+# Gems
+gems:
+    - jekyll-paginate
