@@ -3,5 +3,5 @@
 <header class="row">
     <h1><a href="{{ my_page.url | prepend: site.baseurl }}">{{ site.title }}</a></h1>
     <h2><small>{{ site.description }}</small></h2>
-
 </header>
+{% include breadcrumbs.html %}
