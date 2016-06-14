@@ -40,12 +40,9 @@ markdown: kramdown
 
 # Collections
 collections:
-  documentation:
+  examples:
     output: true
     permalink: /documentation/:path/
-  samples:
-    output: true
-    permalink: /samples/:path/
     
 # Gems
 gems:

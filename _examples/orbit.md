@@ -1,7 +1,8 @@
 ---
 layout: page
 title: Orbit Example
-permalink: /orbit/
+description: Page that demonstrates the Orbit slider inserted into the page.
+permalink: /examples/orbit/
 gallery:
     - image_url: /assets/img/tree.jpg # url of image
       image_caption: Image of a tree # caption of image

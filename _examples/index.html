@@ -1,0 +1,10 @@
+---
+layout: page
+title: Examples
+permalink: /examples/
+---
+
+{% for doc in site.examples %}
+  <h3><a href="{{ doc.url }}">{{ doc.title }}</a></h3>
+  <p>{{ doc.description }}</p>
+{% endfor %}
